@@ -76,8 +76,11 @@ python download_models.py
 # Verify setup
 python test_setup.py
 
-# Run the application
+# Run with video file
 python object_tracking.py
+
+# OR run with live camera
+python live_camera_tracking.py
 ```
 
 ### Interactive Launcher
@@ -353,7 +356,8 @@ You are free to use, modify, and distribute this software with attribution.
 ```
 object-tracking-opencv/
 ├── 🎯 Core Application
-│   ├── object_tracking.py       # Main tracking system with trajectories
+│   ├── object_tracking.py       # Main tracking system (video files)
+│   ├── live_camera_tracking.py  # Live camera tracking (NEW!)
 │   ├── object_detection.py      # YOLOv4 detection wrapper
 │   └── dnn_model/              # YOLOv4 model files
 │       ├── yolov4.weights      # Model weights (download required)
