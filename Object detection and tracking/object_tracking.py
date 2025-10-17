@@ -13,7 +13,8 @@ od = ObjectDetection()
 
 # Video source - you can change this to:
 # 0 for webcam, or path to video file
-VIDEO_SOURCE = "los_angeles.mp4"  # Change to 0 for webcam
+VIDEO_SOURCE = "los_angeles.mp4"
+# Change to 0 for webcam
 cap = cv2.VideoCapture(VIDEO_SOURCE)
 
 # Check if video opened successfully
